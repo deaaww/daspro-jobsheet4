@@ -8,7 +8,6 @@ public class PemilihanPercobaan308 {
         double angka1, angka2, hasil;
         char operator;
 
-        Scanner input00 = new Scanner(System.in);
         System.out.println("Masukkan angka pertama: ");
         angka1 = input00.nextDouble();
         System.out.println("Masukkan angka kedua: ");
@@ -19,20 +18,25 @@ public class PemilihanPercobaan308 {
         switch (operator) {
             case '+':
                 hasil = angka1 + angka2;
-                System.out.println(angka1 + " + " + angka2 "="+ hasil);
+                System.out.println(angka1 + " + " + angka2 + "=" + hasil);
                 break;
             case '-':
                 hasil = angka1 - angka2;
-                System.out.println(angka1 + " - " + angka2 "=" + hasil);
+                System.out.println(angka1 + " - " + angka2 + "=" + hasil);
                 break;
             case '*':
                 hasil = angka1 * angka2;
-                System.out.println(angka1 + " * " + angka2 "="+ hasil);
+                System.out.println(angka1 + " * " + angka2 + "=" + hasil);
                 break;
             case '/':
-                hasil = angka1 / angka2;
-                System.out.println(angka1 + " / " + angka2 "=" hasil);
+                if (angka2 != 0){
+                    hasil = angka1 / angka2;
+                    System.out.println(angka1 + " / " + angka2 + "=" + hasil);
+                } else {
+                    System.out.println("Error: Pembagian dengan nol tidak diperbolehkan. ");
+                }
                 break;
+
         }
 
         input00.close();

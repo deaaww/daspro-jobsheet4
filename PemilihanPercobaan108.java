@@ -8,10 +8,8 @@ public class PemilihanPercobaan108 {
         System.out.print("Masukkan angka: ");
         int angka = input00.nextInt();
 
-        if (angka % 2 == 0)
-            System.out.println("Angka " + angka + "bilangan genao");
-        else
-            System.out.println("Angka " + angka + "bilangan ganjil");
+        String hasil = (angka % 2 == 0) ? "bilangan genap" : "bilangan ganjil";
+        System.out.println("Angka " + angka + " adalah " + hasil);
 
         input00.close();
     }
